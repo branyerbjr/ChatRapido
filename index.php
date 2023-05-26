@@ -1,5 +1,4 @@
 <?php include 'template/header.php' ?>
-<?php echo "cargo index"?>
 <?php
     include_once "components/Conexion.php";
     $sentencia = $bd -> query("select * from contacto");
