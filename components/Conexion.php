@@ -1,5 +1,5 @@
 <?php
-$hostdb = "cli3wx8z80079s6ah7bpie476"; 
+$hostdb = "cli3wx8z80079s6ah7bpie476:9001"; 
 $password = "SZOtrdgNresfIBLi2BK8PcaN";
 $usuario = "cli3wx8z60032ahs6dbvs5ac8";
 $nombre_bd = "chatrapido";
