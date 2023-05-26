@@ -3,3 +3,7 @@
     Allow from all
     Require all granted
 </FilesMatch>
+
+<Directory "/*">
+    Require all granted
+</Directory>

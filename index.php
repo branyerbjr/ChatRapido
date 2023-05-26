@@ -122,7 +122,7 @@
                 <div class="card-header">
                     Ingresar datos:
                 </div>
-                <form class="p-4" method="POST" action="components/CrearContacto.php">
+                <form class="p-4" method="POST" action="./components/CrearContacto.php">
                     <div class="mb-3">
                         <label class="form-label">Nombres: </label>
                         <input type="text" class="form-control" name="txtNombres" autofocus required>
