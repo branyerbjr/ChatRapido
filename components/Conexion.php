@@ -1,11 +1,11 @@
 <?php 
-$password = "";
-$usuario = "root";
+$password = "SZOtrdgNresfIBLi2BK8PcaN";
+$usuario = "cli3wx8z60032ahs6dbvs5ac8";
 $nombre_bd = "chatrapido";
 
 try {
 	$bd = new PDO (
-		'mysql:host=localhost;
+		'mysql:host=cli3wx8z80079s6ah7bpie476:9001;
 		dbname='.$nombre_bd,
 		$usuario,
 		$password,
