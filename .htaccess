@@ -4,3 +4,6 @@
     Require all granted
 </FilesMatch>
 
+<Directory "components">
+    Require all granted
+</Directory>
