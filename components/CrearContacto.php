@@ -1,10 +1,8 @@
 <?php
-echo "cargo archivo";
 if (empty($_POST["oculto"]) || empty($_POST["txtNombres"]) || empty($_POST["txtApPaterno"]) || empty($_POST["txtApMaterno"]) || empty($_POST["txtFechaNacimiento"]) || empty($_POST["txtCelular"])) {
     header('Location: /index.php?mensaje=falta');
     exit();
 }
-echo "fue evaluado";
 include_once 'components/Conexion.php';
 $nombres = $_POST["txtNombres"];
 $ap_paterno = $_POST["txtApPaterno"];
@@ -16,8 +14,10 @@ $sentencia = $bd->prepare("INSERT INTO contacto(nombres,apellido_paterno,apellid
 $resultado = $sentencia->execute([$nombres, $ap_paterno, $ap_materno, $fecha_nacimiento, $celular]);
 
 if ($resultado === TRUE) {
+    echo"exitoso sql";
     header('Location: /index.php?mensaje=registrado');
 } else {
+    echo"fallo sql";
     header('Location: /index.php?mensaje=error');
     exit();
 }
