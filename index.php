@@ -101,10 +101,10 @@
                                 <td><?php echo $dato->apellido_materno; ?></td>
                                 <td><?php echo $dato->fecha_nacimiento; ?></td>
                                 <td><?php echo $dato->celular; ?></td>
-                                <td><a class="text-success" href="editar.php?codigo=<?php echo $dato->id; ?>"><i class="bi bi-pencil-square"></i></a></td>
+                                <td><a class="text-success" href="views/editar.php?codigo=<?php echo $dato->id; ?>"><i class="bi bi-pencil-square"></i></a></td>
                                 <!--Esta parte agrega el boton para el carrito de edicion-->
-                                <td><a class="text-success" href="agregarPromocion.php?codigo=<?php echo $dato->id; ?>"><i class="bi bi-cart3"></i></a></td>
-                                <td><a onclick="return confirm('Estas seguro de eliminar?');" class="text-danger" href="eliminar.php?codigo=<?php echo $dato->id; ?>"><i class="bi bi-trash"></i></a></td>
+                                <td><a class="text-success" href="views/agregar.php?codigo=<?php echo $dato->id; ?>"><i class="bi bi-chat"></i></a></td>
+                                <td><a onclick="return confirm('Estas seguro de eliminar?');" class="text-danger" href="components/EliminarContacto.php?php echo $dato->id; ?>"><i class="bi bi-trash"></i></a></td>
                             </tr>
 
                             <?php 

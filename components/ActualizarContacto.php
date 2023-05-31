@@ -1,4 +1,5 @@
 <?php
+    echo "si esta el archivo";
     print_r($_POST);
     if(!isset($_POST['codigo'])){
         header('Location: index.php?mensaje=error');
