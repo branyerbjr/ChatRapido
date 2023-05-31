@@ -1,7 +1,7 @@
 <?php include 'template/header.php' ?>
 
 <?php
-include_once "model/conexion.php";
+include_once "components/Conexion.php";
 $codigo = $_GET['codigo'];
 
 $sentencia = $bd->prepare("select * from persona where id = ?;");
