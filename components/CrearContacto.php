@@ -14,7 +14,7 @@ $sentencia = $bd->prepare("INSERT INTO contacto(nombres,apellido_paterno,apellid
 $resultado = $sentencia->execute([$nombres, $ap_paterno, $ap_materno, $fecha_nacimiento, $celular]);
 
 if ($resultado === TRUE) {
-    echo"exitoso sql";
+    echo"exitoso sqls";
     header('Location: /index.php?mensaje=registrado');
 } else {
     echo"fallo sql";
