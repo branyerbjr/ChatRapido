@@ -4,11 +4,11 @@
 include_once "components/Conexion.php";
 $codigo = $_GET['codigo'];
 
-$sentencia = $bd->prepare("select * from persona where id = ?;");
+$sentencia = $bd->prepare("select * from contacto where id = ?;");
 $sentencia->execute([$codigo]);
 $persona = $sentencia->fetch(PDO::FETCH_OBJ);
 
-$sentencia_promocion = $bd->prepare("select * from promociones where id_persona = ?;");
+$sentencia_promocion = $bd->prepare("select * from promociones where id_contacto = ?;");
 $sentencia_promocion->execute([$codigo]);
 $promocion = $sentencia_promocion->fetchAll(PDO::FETCH_OBJ); 
 //print_r($persona);
